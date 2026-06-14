@@ -1,4 +1,4 @@
 package MODEL;
 
-public class ConductorPropietario {
+public class ConductorPropietario extends Conductor{
 }

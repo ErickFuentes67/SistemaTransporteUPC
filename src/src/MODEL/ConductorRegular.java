@@ -1,4 +1,4 @@
 package MODEL;
 
-public class ConductorRegular {
+public class ConductorRegular extends Conductor{
 }

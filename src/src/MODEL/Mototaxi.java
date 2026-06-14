@@ -1,4 +1,4 @@
 package MODEL;
 
-public class Mototaxi {
+public class Mototaxi extends Vehiculo{
 }

@@ -1,4 +1,10 @@
 package MODEL;
 
-public class Conductor {
+public abstract class Conductor {
+    String nombre;
+    String cedula;
+    double tarifaBase;
+
+    void calcularValorNeto(double tarifaBase){};
+
 }

@@ -1,4 +1,4 @@
 package MODEL;
 
-public class Van {
+public class Van extends Vehiculo{
 }
