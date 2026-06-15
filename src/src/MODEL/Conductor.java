@@ -23,7 +23,9 @@ public abstract class Conductor {
         return telefono;
     }
 
-    void calcularValorNeto(double tarifaBase){};
+    double calcularValorNeto(double tarifaBase){
+        return tarifaBase;
+    };
 
     @Override
     public String toString() {
