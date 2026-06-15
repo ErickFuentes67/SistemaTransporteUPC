@@ -21,6 +21,9 @@ public class Servicio {
         this.vehiculo = vehiculo;
     }
 
+    public Servicio(String idServicio, Turno turno, Vehiculo vehiculo, LocalDate fecha, String origen, String destino) {
+    }
+
     public String getDestino() {
         return destino;
     }
