@@ -9,7 +9,7 @@ import java.io.*;
 import java.util.ArrayList;
 
 public class VehiculoDAO {
-    String archivo = "vehiculos.txt";
+    private String archivo = "vehiculos.txt";
 
     void guardar(Vehiculo v){
         try(PrintWriter pw = new PrintWriter(new FileWriter(archivo, true))){
