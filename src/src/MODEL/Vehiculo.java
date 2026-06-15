@@ -1,11 +1,57 @@
 package MODEL;
 
 public abstract class Vehiculo {
-    int pasajeros;
+    int capacidadMax;
     String placa;
-    String marca;
-    double tarifaTemporadaBaja;
-    double tarifaTemporadaMedia;
-    double tarifaTemporadaAlta;
+    String ruta;
+    boolean estado;
+    double tarifaBaja;
+    double tarifaMedia;
+    double tarifaAlta;
 
+    public Vehiculo(String ruta, String placa) {
+        this.ruta = ruta;
+        this.placa = placa;
+    }
+
+    public int getCapacidadMax() {
+        return capacidadMax;
+    }
+
+    public boolean isEstado() {
+        return estado;
+    }
+
+    public String getRuta() {
+        return ruta;
+    }
+
+    public String getPlaca() {
+        return placa;
+    }
+
+    public double getTarifaAlta() {
+        return tarifaAlta;
+    }
+
+    public double getTarifaBaja() {
+        return tarifaBaja;
+    }
+
+    public double getTarifaMedia() {
+        return tarifaMedia;
+    }
+
+    public void setPlaca(String placa) {
+        this.placa = placa;
+    }
+
+    public void setEstado(boolean estado) {
+        this.estado = estado;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }
