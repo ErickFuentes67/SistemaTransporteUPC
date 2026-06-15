@@ -52,6 +52,9 @@ public abstract class Vehiculo {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "placa='" + placa + '\'' +
+                ", ruta='" + ruta + '\'' +
+                ", capacidadMax=" + capacidadMax +
+                ", estado=" + estado;
     }
 }
