@@ -17,6 +17,9 @@ public class Turno {
         this.conductor = conductor;
     }
 
+    public Turno(String idTurno, Conductor conductor, LocalDateTime inicio, LocalDateTime fin) {
+    }
+
     public boolean isActivo() {
         return activo;
     }
