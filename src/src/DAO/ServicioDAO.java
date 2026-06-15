@@ -11,7 +11,7 @@ public class ServicioDAO {
 
     private String archivo = "servicios.txt";
 
-    public void guardar(Servicio s) {
+    public void guardar(@org.jetbrains.annotations.UnknownNullability ArrayList<Servicio> s) {
         try (PrintWriter pw = new PrintWriter(new FileWriter(archivo, true))) {
             pw.println(s.toString());
         } catch (IOException e) {

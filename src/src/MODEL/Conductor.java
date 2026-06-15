@@ -23,7 +23,7 @@ public abstract class Conductor {
         return telefono;
     }
 
-    double calcularValorNeto(double tarifaBase){
+    public double calcularValorNeto(double tarifaBase){
         return tarifaBase;
     };
 

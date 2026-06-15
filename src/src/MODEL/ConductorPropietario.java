@@ -9,7 +9,7 @@ public class ConductorPropietario extends Conductor{
     }
 
     @Override
-    double calcularValorNeto(double tarifaBase) {
+    public double calcularValorNeto(double tarifaBase) {
         super.calcularValorNeto(tarifaBase);
         return  tarifaBase + (tarifaBase * tarifaAdicional);
     }
