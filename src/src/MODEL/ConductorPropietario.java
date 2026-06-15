@@ -2,7 +2,7 @@ package MODEL;
 
 public class ConductorPropietario extends Conductor{
 
-    double tarifaAdicional = 0.10;
+    final double tarifaAdicional = 0.10;
 
     public ConductorPropietario(String cedula, String nombre, String telefono) {
         super(cedula, nombre, telefono);
