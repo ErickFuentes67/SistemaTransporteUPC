@@ -34,4 +34,9 @@ public abstract class Conductor {
                 ", telefono=" + telefono ;
     }
 
+    public void setNombre(String nombre) {
+    }
+
+    public void setTelefono(String telefono) {
+    }
 }

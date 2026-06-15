@@ -9,7 +9,7 @@ public class ConductorDAO {
 
     private String archivo = "Conductores.txt";
 
-    public void guardar (Conductor conductor) {
+    public void guardar (ArrayList<Conductor> conductor) {
         try {
             FileWriter fichero = new FileWriter(archivo, true);
         } catch (IOException e) {
