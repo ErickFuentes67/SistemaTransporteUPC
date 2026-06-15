@@ -14,6 +14,7 @@ public class ConductorRegular extends Conductor{
 
     @Override
     public String toString() {
-        return "Conductor regular" + super.toString();
+        return "Conductor regular{"
+                + super.toString();
     }
 }
