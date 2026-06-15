@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class TurnoDAO {
     private String archivo = "turnos.txt";
 
-    public void guardar(@org.jetbrains.annotations.UnknownNullability ArrayList<Turno> t) {
+    public void guardar(ArrayList<Turno> t) {
         try (PrintWriter pw = new PrintWriter(new FileWriter(archivo, true))) {
             pw.println(t.toString());
         } catch (IOException e) {
