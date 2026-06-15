@@ -8,13 +8,13 @@ import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 public class Main {
-    private static Scanner sc = new Scanner(System.in);
+    final private static Scanner sc = new Scanner(System.in);
     private static VehiculoService vehiculoService;
     private static ConductorService conductorService;
     private static TurnoService turnoService;
     private static ServicioService servicioService;
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
         // Inicializar servicios en orden correcto
         conductorService = new ConductorService();
         vehiculoService = new VehiculoService();
@@ -82,7 +82,7 @@ public class Main {
         System.out.print("Tipo (Regular / Propietario / Contratado): ");
         String tipo = sc.nextLine();
 
-        Conductor c = null;
+        Conductor c;
         switch (tipo.toLowerCase()) {
             case "regular":
                 c = new ConductorRegular(cedula, nombre, telefono);
@@ -161,7 +161,7 @@ public class Main {
         System.out.print("Tipo (Mototaxi / Automovil / Van): ");
         String tipo = sc.nextLine();
 
-        Vehiculo v = null;
+        Vehiculo v;
         switch (tipo.toLowerCase()) {
             case "mototaxi": v = new Mototaxi(placa, ruta); break;
             case "automovil": v = new Automovil(placa, ruta); break;
@@ -199,7 +199,7 @@ public class Main {
         String estadoStr = sc.nextLine();
         boolean estado = estadoStr.isEmpty() ? existente.isEstado() : Boolean.parseBoolean(estadoStr);
 
-        Vehiculo nuevos = null;
+        Vehiculo nuevos;
         if (existente instanceof Mototaxi) nuevos = new Mototaxi(placa, ruta);
         else if (existente instanceof Automovil) nuevos = new Automovil(placa, ruta);
         else nuevos = new Van(placa, ruta);
