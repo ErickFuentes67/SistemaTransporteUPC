@@ -33,7 +33,7 @@ public class ConductorService {
     }
 
     public boolean registrar(Conductor c){
-        if (buscarPorCedula(c.getCedula()) != null {
+        if (buscarPorCedula(c.getCedula()) != null) {
             System.out.println("Ya existe una conductor con ese cedula");
             return false;
         }
