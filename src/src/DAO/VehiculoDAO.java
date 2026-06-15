@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class VehiculoDAO {
     private String archivo = "vehiculos.txt";
 
-    void guardar(Vehiculo v){
+    public void guardar(ArrayList<Vehiculo> v){
         try(PrintWriter pw = new PrintWriter(new FileWriter(archivo, true))){
             pw.println(v.toString());
         } catch (IOException e){

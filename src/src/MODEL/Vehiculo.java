@@ -57,4 +57,8 @@ public abstract class Vehiculo {
                 ", capacidadMax=" + capacidadMax +
                 ", estado=" + estado;
     }
+
+    public void setRuta(String ruta) {
+
+    }
 }
